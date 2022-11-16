@@ -10,11 +10,11 @@ import { DepartamentosComponent } from './Departamentos/Departamentos.component'
   declarations: [		
     AppComponent,
       FuncionariosComponent,
-      DepartamentosComponent
+      DepartamentosComponent,
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
