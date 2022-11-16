@@ -7,14 +7,16 @@ import { FuncionariosComponent } from './funcionarios/funcionarios.component';
 import { DepartamentosComponent } from './Departamentos/Departamentos.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
       FuncionariosComponent,
       DepartamentosComponent,
       PerfilComponent,
-      DashboardComponent
+      DashboardComponent,
+      NavComponent
    ],
   imports: [
     BrowserModule,
