@@ -1,9 +1,19 @@
-<h1>
-  {{titulo}}
-</h1>
+<app-titulo [titulo]="titulo"></app-titulo>
 
-<ul>
-  <li *ngFor="let departamentos of departamentos">
-    {{departamentos.nome}}
-  </li>
-</ul>
+<table class="table">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Sigla</th>
+    </tr>
+    
+  </thead>
+  <tbody>
+    <tr *ngFor="let departamentos of departamentos">
+      <th scope="row">{{departamentos.id}}</th>
+      <td>{{departamentos.nome}}</td>
+      <td>{{departamentos.sigla}}</td>
+    </tr>  
+  </tbody>
+</table>
